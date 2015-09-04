@@ -4,7 +4,9 @@
 
 這裡面的Script，是用來調校「Ubutu 14.04」。
 
-是根據這篇「[[教學] Ubuntu 14.04的調校](http://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=317196#forumpost317196)」，所整理出來的。發布在該篇的「討論串」。
+是根據這篇「[[教學] Ubuntu 14.04的調校](http://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=317196#forumpost317196)」，所整理出來的。
+
+發布在該篇的「[討論串](http://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=345076#forumpost345076)」。
 
 
 ## 前置作業
