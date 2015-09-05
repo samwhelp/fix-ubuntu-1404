@@ -73,7 +73,7 @@ $ ./run.sh
 $ ~/App/Fix/app/radiotray/run.sh
 ```
 
-## 只有安裝全部套件
+### 只有安裝全部套件
 
 切換到「~/App/Fix」這個資料夾。
 
@@ -92,6 +92,35 @@ $ ./install.sh
 ``` sh
 $ ~/App/Fix/install.sh
 ```
+
+## 進階用法
+
+### 指定安裝
+
+切換到「~/App/Fix」這個資料夾。
+
+``` sh
+$ cd ~/App/Fix
+```
+
+執行「allow.create-list.sh」，產生「tmp/allow.list」這個檔。
+
+``` sh
+$ ./allow.create-list.sh
+```
+
+編輯「tmp/allow.list」，刪除不要安裝的。
+
+```
+$ vi ./tmp/allow.list
+```
+
+執行「allow.run.sh」，會根據「tmp/allow.list」這個檔所列的來執行。
+
+``` sh
+$ ./allow.run.sh
+```
+
 
 ## LICENSE
 
