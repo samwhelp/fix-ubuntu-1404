@@ -25,6 +25,27 @@ $ git clone https://github.com/samwhelp/fix-ubuntu-1404.git ~/app/fix-ubuntu-140
 
 ## 使用說明
 
+### 全部安裝
+
+切換到「~/app/fix-ubuntu-1404/main」這個資料夾。
+
+``` sh
+$ cd ~/app/fix-ubuntu-1404/main
+```
+
+執行
+
+``` sh
+$ make auto
+```
+
+就可以執行所有的安裝步驟。
+
+因為「script」有使用到「sudo」，所以會詢問你目前帳號的「密碼」。
+
+跟下面一個「make install」的區格，是因為下面的「make install」在安裝套件，會再度詢問確認，是否確定安裝，
+這個只有一開始確認，過程中就不詢問確認了。
+
 
 ### 全部安裝
 
