@@ -5,3 +5,4 @@
 
 * http://samwhelp.github.io/blog/read/linux/ubuntu/font/font-noto/
 * http://samwhelp.github.io/book-ubuntu-basic-skill/book/content/font/font-noto.html
+* https://www.google.com/get/noto/help/install/

@@ -1,3 +1,4 @@
-[Tt]emp
-tmp/allow.list
-tmp/package.list
+.DS_Store
+Thumbs.db
+tmp
+itf

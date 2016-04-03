@@ -84,7 +84,37 @@ $ make apt-install
 
 ### 指定安裝
 
-Todo:
+切換到「~/app/fix-ubuntu-1404/main/」這個資料夾。
+
+``` sh
+$ cd ~/app/fix-ubuntu-1404/main/
+```
+
+執行
+
+``` sh
+$ make select
+```
+
+會產生「itf/select.list」這個檔，裡面的內容是「app」底下的資料夾名稱列表。
+
+然後你可以編輯「itf/select.list」
+
+``` sh
+$ vi itf/select.list
+```
+
+把不要安裝的刪除，在該行「dd」，就會刪除該行
+
+再來執行
+
+``` sh
+$ make select-install
+```
+
+就會依據「itf/select.list」列的，執行「app/$package/bin/install.sh」
+
+等同「make install」的自選版本。
 
 ## LICENSE
 
