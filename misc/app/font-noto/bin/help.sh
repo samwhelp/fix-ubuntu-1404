@@ -12,7 +12,7 @@ usage()
 	cat <<EOF
 Ex:
 $ make
-$ make usage
+$ make help
 $ make install
 $ make apt-install
 $ make configure
