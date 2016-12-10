@@ -3,28 +3,39 @@ THE_MAKEFILE_FILE_PATH := $(abspath $(lastword $(MAKEFILE_LIST)))
 THE_BASE_DIR_PATH := $(abspath $(dir $(THE_MAKEFILE_FILE_PATH)))
 THE_BIN_DIR_PATH := $(THE_BASE_DIR_PATH)/bin
 
-.PHONY: usage install apt-install clean select select-install select-remove auto
+PATH := $(THE_BIN_DIR_PATH):$(PATH)
 
-usage:
-	@$(THE_BIN_DIR_PATH)/usage.sh
+default: help
+.PHONY: default
+
+help:
+	@help.sh
+.PHONY: help
 
 install:
-	@$(THE_BIN_DIR_PATH)/install.sh
+	@install.sh
+.PHONY: install
 
 apt-install:
-	@$(THE_BIN_DIR_PATH)/apt-install.sh
+	@apt-install.sh
+.PHONY: apt-install
 
 clean:
-	@$(THE_BIN_DIR_PATH)/clean.sh
+	@clean.sh
+.PHONY: clean
 
 select:
-	@$(THE_BIN_DIR_PATH)/select.sh
+	@select.sh
+.PHONY: select
 
 select-install:
-	@$(THE_BIN_DIR_PATH)/select-install.sh
+	@select-install.sh
+.PHONY: select-install
 
 select-remove:
-	@$(THE_BIN_DIR_PATH)/select-remove.sh
+	@select-remove.sh
+.PHONY: select-remove
 
 auto:
-	@$(THE_BIN_DIR_PATH)/auto.sh
+	@auto.sh
+.PHONY: auto
